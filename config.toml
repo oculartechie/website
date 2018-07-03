@@ -1,0 +1,29 @@
+baseURL = "http://example.org/"
+languageCode = "en-us"
+title = "oculartechie"
+theme = "coder"
+
+[params] # theme parameters
+    author = "oculartechie (me)" # Author's name.
+    info = "Full Time Troublemaker" # Author's job title or info.
+    description = "My personal site for troublemaking" # Site description.
+    keywords = "blog,developer,personal" # Site keywords.
+
+    #disqusShortname = "yourdiscussshortname" # Enable or disable Disqus
+
+    # Whether you want to hide copyright and credits in the footer.
+    hideCredits = false
+    hideCopyright = false
+
+    # Custom CSS
+	custom_css = []
+
+# Menu links
+[[menu.main]]
+    name = "Blog"
+    weight = 1
+    url  = "/posts/"
+[[menu.main]]
+    name = "About"
+    weight = 2
+    url = "/about/"
