@@ -1,5 +1,5 @@
 +++ 
-draft = true
+draft = false
 date = 2018-07-03T18:29:43-04:00
 title = "In the beginning... "
 slug = "" 
