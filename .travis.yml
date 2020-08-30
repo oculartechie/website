@@ -1,17 +1,8 @@
 language: go
-
-go:
-  - master # This uses automatically the latest version of go
-
-#before_install:
-addons:
-  homebrew:
-    packages:
-    - hugo
     
-#install:
-#  - /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
-#  - brew install hugo
+install:
+  - /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
+  - brew install hugo
 
 script:
   - hugo -D # Builds the website on travis
