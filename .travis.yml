@@ -4,10 +4,11 @@ go:
   - master # This uses automatically the latest version of go
 
 install:
-  - go get github.com/spf13/hugo # This provides the latest version of Hugo to Travis CI
+  - sudo /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
+  - brew install hugo
 
 script:
-  - hugo # Builds the website on travis
+  - hugo -D # Builds the website on travis
 
 deploy:
   local_dir: public # Default static site output dir for Hugo
