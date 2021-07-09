@@ -64,7 +64,7 @@ disableHugoGeneratorInject = false
 
   # Home subtitle of the index page.
   #
-  homeSubtitle = "Original troublemaker site"
+  homeSubtitle = "Life through the eyes of a modern day nerd"
 
   # Set a background for the homepage
   # backgroundImage = "assets/images/background.jpg"
@@ -183,14 +183,14 @@ disableHugoGeneratorInject = false
 
 [languages]
   [languages.en]
-    subtitle  = "Original troublemaker site"
+    subtitle  = "Life through the eyes of a modern day nerd"
     weight    = 1
-  #  copyright = '<a href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank" rel="noopener">CC BY-NC 4.0</a>'
+    copyright = '<a href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank" rel="noopener">CC BY-NC 4.0</a>'
 
   [languages.fr]
-    subtitle  = "Original troublemaker site"
+    subtitle  = "Life through the eyes of a modern day nerd"
     weight    = 2
-  #  copyright = '<a href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank" rel="noopener">CC BY-NC 4.0</a>'
+    copyright = '<a href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank" rel="noopener">CC BY-NC 4.0</a>'
 
 [menu]
   [[menu.main]]
