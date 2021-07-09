@@ -39,8 +39,8 @@ paginate     = 10
 
 
   # Links to your social accounts, comment/uncomment as needed. Icons will be displayed for those specified.
-  twitter = "https://twitter.com/<your handle>"
-  github = "https://github.com/<your handle>"
+  twitter = "https://twitter.com/oculartechie"
+  github = "https://github.com/oculartechie"
   # email = "mailto:<your email>"
   # facebook = "https://facebook.com/<your handle>"
   # gitlab = "https://gitlab.com/<your handle>"
