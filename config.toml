@@ -66,6 +66,9 @@ disableHugoGeneratorInject = false
   #
   homeSubtitle = "Life through the eyes of a modern day nerd"
 
+  # "light" or "dark"
+  defaultTheme = "dark"
+
   # Set a background for the homepage
   # backgroundImage = "assets/images/background.jpg"
 
@@ -92,9 +95,6 @@ disableHugoGeneratorInject = false
   # and add them into your own `layouts/partials/sharing-buttons.html`
   #
   enableSharingButtons = true
-
-  # Enable sharing buttons, if you like
-  #enableSharingButtons = true
 
   # Set to true to display page title in table of contents in blog posts.
   #showPageTitleInTOC = false
