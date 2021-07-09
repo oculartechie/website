@@ -16,41 +16,14 @@ paginate     = 10
 
 # Optional params
 [params]
-  # Follow the Hugo date/time format reference here: 
-  # https://gohugo.io/functions/format/#gos-layout-string
-  dateform        = "Jan 2, 2006"
-  dateformShort   = "Jan 2"
-  dateformNum     = "2006-01-02"
-  dateformNumTime = "2006-01-02 15:04"
-
+  # dir name of your blog content (default is `content/posts`)
+  contentTypeName = "post"
   # "light" or "dark"
   defaultTheme = "dark"
-
-  # Subtitle for home
-  homeSubtitle = "Life through the eyes of a modern day nerd"
-
-  # Set disableReadOtherPosts to true in order to hide the links to other posts.
-  disableReadOtherPosts = false
-
-  # Enable sharing buttons, if you like
-  enableSharingButtons = true
-
-  # Metadata mostly used in document's head
-  description = "My new homepage or blog"
-  keywords = "homepage, blog"
-  images = [""]
-
-  # Set to true to display page title in table of contents in blog posts.
-  showPageTitleInTOC = false
-
-  # Social icons
-  [[params.social]]
-    name = "twitter"
-    url  = "https://twitter.com/oculartechie"
-
-  [[params.social]]
-    name = "github"
-    url  = "https://github.com/oculartechie"
+  # if you set this to 0, only submenu trigger will be visible
+  showMenuItems = 2
+  # Enable to show reading time in minutes for posts
+  showReadingTime = false
 
 # This disables Hugo's default syntax highlighting in favor
 # of prismjs. If you wish to use Hugo's default syntax highlighting
@@ -89,6 +62,16 @@ paginate     = 10
     #
     # path = "/img/your-example-logo.svg"
     # alt = "Your example logo alt text"
+
+
+    # Social icons
+    [[languages.en.params.social]]
+      name = "twitter"
+      url  = "https://twitter.com/oculartechie"
+
+    [[languages.en.params.social]]
+      name = "github"
+      url  = "https://github.com/oculartechie"
 
     [languages.en.menu]
       [[languages.en.menu.main]]
