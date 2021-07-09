@@ -1,23 +1,23 @@
-name: Push to GitHub Pages on push to master
+# .github/workflows/github-actions-hugo-deploy.yml
+
+name: build
+
 on:
   push:
     branches:
-      - master
+    - master
 
 jobs:
   build:
-    name: Deploy
     runs-on: ubuntu-latest
-    steps:
-      - name: Checkout master
-        uses: actions/checkout@v1
 
-      - name: Deploy the site
-        uses: benmatselby/hugo-deploy-gh-pages@master
-        env:
-          HUGO_VERSION: 0.83.1
-          TARGET_REPO: oculartechie/oculartechie.github.io
-          TARGET_BRANCH: default
-          TOKEN: ${{ secrets.TOKEN }}
-          HUGO_ARGS: '-t academic'
-          CNAME: oculartechie.github.io
+    steps:
+    - name: 'Building...'
+      uses: reuixiy/hugo-deploy@v1
+      env:
+        DEPLOY_REPO: oculartechie/oculartechie.github.io
+        DEPLOY_BRANCH: default
+        DEPLOY_KEY: ${{ secrets.DEPLOY_KEY }}
+        # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
+        TZ: America/Toronto
+
