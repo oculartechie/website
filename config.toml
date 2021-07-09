@@ -1,11 +1,12 @@
 # DO NOT REMOVE THIS
-theme = "hugo-theme-codex" 
+theme        = "hello-friend-ng" 
 
 # Override these settings with your own
-title = "oculartechie"
+title        = "oculartechie"
 languageCode = "en-us"
-baseURL = "https://oculartechie.github.io/"
-copyright = "© 2020"
+baseURL      = "https://oculartechie.github.io/"
+copyright    = "© 2021"
+paginate     = 10
 
 # Add your Disqus shortname here.
 # disqusShortname = ""
@@ -17,7 +18,25 @@ copyright = "© 2020"
 [params]
   # Follow the Hugo date/time format reference here: 
   # https://gohugo.io/functions/format/#gos-layout-string
-  dateFormat = "Jan 2 2006"
+  dateform        = "Jan 2, 2006"
+  dateformShort   = "Jan 2"
+  dateformNum     = "2006-01-02"
+  dateformNumTime = "2006-01-02 15:04"
+
+  # Subtitle for home
+  homeSubtitle = "Life through the eyes of a modern day nerd"
+
+  # Set disableReadOtherPosts to true in order to hide the links to other posts.
+  disableReadOtherPosts = false
+
+  # Enable sharing buttons, if you like
+  enableSharingButtons = true
+
+  # Metadata mostly used in document's head
+  description = "My new homepage or blog"
+  keywords = "homepage, blog"
+  images = [""]
+
 
   # Links to your social accounts, comment/uncomment as needed. Icons will be displayed for those specified.
   twitter = "https://twitter.com/<your handle>"
