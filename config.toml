@@ -8,12 +8,6 @@ baseURL      = "https://oculartechie.github.io/"
 copyright    = "© 2021"
 paginate     = 10
 
-# Add your Disqus shortname here.
-# disqusShortname = ""
-
-# Add your Google Analytics identifier: UA-XXXXXXXX-X
-# googleAnalytics = "" 
-
 # Optional params
 [params]
   # dir name of your blog content (default is `content/posts`)
