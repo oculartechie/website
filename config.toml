@@ -51,6 +51,10 @@ disableHugoGeneratorInject = false
   series   = "series"
 
 [params]
+
+  # "light" or "dark"
+  defaultTheme = "dark"
+
   dateform        = "Jan 2, 2006"
   dateformShort   = "Jan 2"
   dateformNum     = "2006-01-02"
@@ -65,9 +69,6 @@ disableHugoGeneratorInject = false
   # Home subtitle of the index page.
   #
   homeSubtitle = "Life through the eyes of a modern day nerd"
-
-  # "light" or "dark"
-  defaultTheme = "dark"
 
   # Set a background for the homepage
   # backgroundImage = "assets/images/background.jpg"
