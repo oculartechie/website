@@ -23,6 +23,9 @@ paginate     = 10
   dateformNum     = "2006-01-02"
   dateformNumTime = "2006-01-02 15:04"
 
+  # "light" or "dark"
+  defaultTheme = "dark"
+
   # Subtitle for home
   homeSubtitle = "Life through the eyes of a modern day nerd"
 
