@@ -1,80 +1,206 @@
-# DO NOT REMOVE THIS
-theme        = "hello-friend" 
-
-# Override these settings with your own
+baseURL      = "https://oculartechie.github.io/"
 title        = "oculartechie"
 languageCode = "en-us"
-baseURL      = "https://oculartechie.github.io/"
+theme        = "hello-friend-ng" 
+
+PygmentsCodeFences = true
+PygmentsStyle      = "monokai"
+
+paginate  = 10
+rssLimit  = 10  # Maximum number of items in the RSS feed.
 copyright    = "© 2021"
-paginate     = 10
 
-# Optional params
+# Add your Disqus shortname here.
+# disqusShortname = ""
+
+# Add your Google Analytics identifier: UA-XXXXXXXX-X
+# googleAnalytics = "" 
+
+archetypeDir = "archetypes"
+contentDir   = "content"
+dataDir      = "data"
+layoutDir    = "layouts"
+publishDir   = "public"
+
+buildDrafts  = false
+buildFuture  = false
+buildExpired = false
+canonifyURLs = true
+
+enableRobotsTXT = true
+enableGitInfo   = false
+enableEmoji     = true
+enableMissingTranslationPlaceholders = false
+disableRSS     = false
+disableSitemap = false
+disable404     = false
+disableHugoGeneratorInject = false
+
+[permalinks]
+  posts = "/posts/:year/:month/:title/"
+
+[author]
+  name = "oculartechie"
+
+[blackfriday]
+  hrefTargetBlank = true
+
+[taxonomies]
+  tag      = "tags"
+  category = "categories"
+  series   = "series"
+
 [params]
-  # dir name of your blog content (default is `content/posts`)
-  contentTypeName = "post"
-  # "light" or "dark"
-  defaultTheme = "dark"
-  # if you set this to 0, only submenu trigger will be visible
-  showMenuItems = 2
-  # Enable to show reading time in minutes for posts
-  showReadingTime = false
+  dateform        = "Jan 2, 2006"
+  dateformShort   = "Jan 2"
+  dateformNum     = "2006-01-02"
+  dateformNumTime = "2006-01-02 15:04"
 
-# This disables Hugo's default syntax highlighting in favor
-# of prismjs. If you wish to use Hugo's default syntax highlighting
-# over prismjs, remove this. You will also need to remove the prismjs
-# vendor script in layouts/blog/single.html.
-[markup]
-  [markup.highlight]
-    codeFences = false
-    
-  # Set to false to disallow raw HTML in markdown files
-  [markup.goldmark.renderer]
-      unsafe = true
+  # Metadata mostly used in document's head
+  # 
+  description = "Life through the eyes of a modern day nerd"
+  keywords = "homepage, blog"
+  images = [""]
+
+  # Home subtitle of the index page.
+  #
+  homeSubtitle = "Original troublemaker site"
+
+  # Set a background for the homepage
+  # backgroundImage = "assets/images/background.jpg"
+
+  # Prefix of link to the git commit detail page. GitInfo must be enabled.
+  #
+  # gitUrl = ""
+
+  # Set disableReadOtherPosts to true in order to hide the links to other posts.
+  #
+  disableReadOtherPosts = false
+
+  # Enable theme toggle
+  # 
+  # This options enables the theme toggle for the theme. 
+  # Per default, this option is off. 
+  # The theme is respecting the prefers-color-scheme of the operating systeme. 
+  # With this option on, the page user is able to set the scheme he wants. 
+  enableThemeToggle = false
+
+  # Sharing buttons
+  #
+  # There are a lot of buttons preconfigured. If you want to change them,
+  # generate the buttons here: https://sharingbuttons.io
+  # and add them into your own `layouts/partials/sharing-buttons.html`
+  #
+  enableSharingButtons = true
+
+  # Enable sharing buttons, if you like
+  #enableSharingButtons = true
+
+  # Set to true to display page title in table of contents in blog posts.
+  #showPageTitleInTOC = false
+
+  # Integrate Javascript files or stylesheets by adding the url to the external assets or by
+  # linking local files with their path relative to the static folder, e.g. "css/styles.css"
+  #
+  customCSS = []
+  customJS  = []
+
+  # Toggle this option need to rebuild SCSS, requires extended version of Hugo
+  #
+  justifyContent = false  # Set "text-align: justify" to .post-content.
+
+  # Custom footer 
+  # If you want, you can easily override the default footer with your own content. 
+  #
+  [params.footer]
+    trademark = true
+    rss = true
+    copyright = true
+    author = true
+
+    topText = []
+    bottomText = [
+      "Powered by <a href=\"http://gohugo.io\">Hugo</a>",
+      "Made with &#10084; by <a href=\"https://github.com/rhazdon\">Djordje Atlialp</a>"
+    ]
+
+  # Colors for favicons
+  #
+  [params.favicon.color]
+    mask = "#1b1c1d"
+    msapplication = "#1b1c1d"
+    theme = "#1b1c1d"
+
+  [params.logo]
+    logoMark     = ">"
+    logoText     = "$ cd /home/heypeople"
+    logoHomeLink = "/"
+    # Set true to remove the logo cursor entirely.
+    # logoCursorDisabled = false
+    # Set to a valid CSS color to change the cursor in the logo.
+    # logoCursorColor    = "#67a2c9"
+    # Set to a valid CSS time value to change the animation duration, "0s" to disable.
+    # logoCursorAnimate  = "2s"
+
+  # Commento is more than just a comments widget you can embed — 
+  # it’s a return to the roots of the internet. 
+  # An internet without the tracking and invasions of privacy. 
+  # An internet that is simple and lightweight. 
+  # An internet that is focused on interesting discussions, not ads. 
+  # A better internet.
+  # Uncomment this to enable Commento.
+  #
+  # [params.commento]
+  #   url = ""
+
+  # Uncomment this if you want a portrait on your start page
+  #
+  # [params.portrait]
+  #   path     = "/img/image.jpg"
+  #   alt      = "Portrait"
+  #   maxWidth = "50px"
+
+  # Social icons
+  [[params.social]]
+    name = "twitter"
+    url  = "https://twitter.com/oculartechie"
+
+  #[[params.social]]
+  #  name = "email"
+  #  url  = "mailto:nobody@example.com"
+
+  [[params.social]]
+    name = "github"
+    url  = "https://github.com/oculartechie"
+
+  #[[params.social]]
+  #  name = "linkedin"
+  #  url  = "https://www.linkedin.com/"
+
+  #[[params.social]]
+  #  name = "stackoverflow"
+  #  url  = "https://www.stackoverflow.com/"
 
 [languages]
   [languages.en]
-    title = "Life through the eyes of a modern day nerd"
-    subtitle = "Stay tuned....."
-    keywords = ""
-    copyright = ""
-    menuMore = "Show more"
-    writtenBy = "Written by"
-    readMore = "Read more"
-    readOtherPosts = "Read other posts"
-    newerPosts = "Newer posts"
-    olderPosts = "Older posts"
-    minuteReadingTime = "min read"
-    dateFormatSingle = "2006-01-02"
-    dateFormatList = "2006-01-02"
-    # leave empty to disable, enter display text to enable
-    # lastModDisplay = ""
+    subtitle  = "Original troublemaker site"
+    weight    = 1
+  #  copyright = '<a href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank" rel="noopener">CC BY-NC 4.0</a>'
 
-    [languages.en.params.logo]
-      logoText = "hello everybody!"
-      logoHomeLink = "/"
-    # or
-    #
-    # path = "/img/your-example-logo.svg"
-    # alt = "Your example logo alt text"
+  [languages.fr]
+    subtitle  = "Original troublemaker site"
+    weight    = 2
+  #  copyright = '<a href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank" rel="noopener">CC BY-NC 4.0</a>'
 
+[menu]
+  [[menu.main]]
+    identifier = "about"
+    name = "about"
+    title = "About"
+    url = "/"
 
-    # Social icons
-    [[languages.en.params.social]]
-      name = "twitter"
-      url  = "https://twitter.com/oculartechie"
-
-    [[languages.en.params.social]]
-      name = "github"
-      url  = "https://github.com/oculartechie"
-
-    [languages.en.menu]
-      [[languages.en.menu.main]]
-        identifier = "about"
-        name = "about"
-        title = "About"
-        url = "/"
-      [[languages.en.menu.main]]
-        identifier = "blog"
-        name = "blog"
-        title = "Blog"
-        url = "/blog"
+  [[menu.main]]
+    identifier = "blog"
+    name = "blog"
+    title = "Blog"
+    url = "/blog"
