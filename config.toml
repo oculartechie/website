@@ -59,8 +59,7 @@ disableHugoGeneratorInject = false
   # Home subtitle of the index page.
   homeSubtitle = "Life through the eyes of a modern day nerd"
 
-  defaultTheme: "dark"
-  themeColor: "#1a1d21"
+  defaultTheme = "dark"
 
   # Metadata mostly used in document's head
   description = "Life through the eyes of a modern day nerd"
@@ -113,7 +112,7 @@ disableHugoGeneratorInject = false
   [params.footer]
     trademark = true
     rss = true
-    copyright = true
+    copyright = false
     author = true
 
     topText = []
@@ -182,12 +181,10 @@ disableHugoGeneratorInject = false
   [languages.en]
     subtitle  = "Life through the eyes of a modern day nerd"
     weight    = 1
-    copyright = '<a href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank" rel="noopener">CC BY-NC 4.0</a>'
 
   [languages.fr]
     subtitle  = "Life through the eyes of a modern day nerd"
     weight    = 2
-    copyright = '<a href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank" rel="noopener">CC BY-NC 4.0</a>'
 
 [menu]
   [[menu.main]]
