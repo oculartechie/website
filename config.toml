@@ -51,24 +51,21 @@ disableHugoGeneratorInject = false
   series   = "series"
 
 [params]
-
-  # "light" or "dark"
-  defaultTheme = "dark"
-
   dateform        = "Jan 2, 2006"
   dateformShort   = "Jan 2"
   dateformNum     = "2006-01-02"
   dateformNumTime = "2006-01-02 15:04"
 
+  # Home subtitle of the index page.
+  homeSubtitle = "Life through the eyes of a modern day nerd"
+
+  defaultTheme: "dark"
+  themeColor: "#1a1d21"
+
   # Metadata mostly used in document's head
-  # 
   description = "Life through the eyes of a modern day nerd"
   keywords = "homepage, blog"
   images = [""]
-
-  # Home subtitle of the index page.
-  #
-  homeSubtitle = "Life through the eyes of a modern day nerd"
 
   # Set a background for the homepage
   # backgroundImage = "assets/images/background.jpg"
